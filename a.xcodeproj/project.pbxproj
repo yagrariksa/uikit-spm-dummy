@@ -28,6 +28,7 @@
 		404A4D6B2B8C3EB6007EBCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		404A4D722B8C3F27007EBCCE /* TestView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestView.storyboard; sourceTree = "<group>"; };
 		404A4D742B8C3F31007EBCCE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		40BCE6812B8C86B8005FCE59 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		404A4D512B8C3EB5007EBCCE = {
 			isa = PBXGroup;
 			children = (
+				40BCE6812B8C86B8005FCE59 /* Package.swift */,
 				404A4D5C2B8C3EB6007EBCCE /* a */,
 				404A4D5B2B8C3EB6007EBCCE /* Products */,
 			);
