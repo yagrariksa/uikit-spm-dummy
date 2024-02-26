@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Helper {
+public class Helper {
     static var bundle: Bundle {
         return Bundle(for: TestViewController.self)
     }
