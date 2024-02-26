@@ -26,7 +26,7 @@ let package = Package(
                 path: "a/Module",
                 sources: ["Classes"],
                 resources: [
-                    .process("Assets")
+                    .copy("Assets")
                 ]
             )
         ]
