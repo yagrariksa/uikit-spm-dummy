@@ -8,27 +8,27 @@
 import Foundation
 import UIKit
 
-class TestViewController: ViewController {
+public class TestViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 }
 
 extension TestViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Label \(indexPath.row)"
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
     

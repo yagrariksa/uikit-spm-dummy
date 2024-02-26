@@ -60,7 +60,7 @@
 		404A4D5C2B8C3EB6007EBCCE /* a */ = {
 			isa = PBXGroup;
 			children = (
-				404A4D712B8C3EF5007EBCCE /* TestView */,
+				404A4D9F2B8C80AA007EBCCE /* Module */,
 				404A4D5D2B8C3EB6007EBCCE /* AppDelegate.swift */,
 				404A4D5F2B8C3EB6007EBCCE /* SceneDelegate.swift */,
 				404A4D612B8C3EB6007EBCCE /* ViewController.swift */,
@@ -72,13 +72,29 @@
 			path = a;
 			sourceTree = "<group>";
 		};
-		404A4D712B8C3EF5007EBCCE /* TestView */ = {
+		404A4D9F2B8C80AA007EBCCE /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				404A4DA12B8C80B3007EBCCE /* Assets */,
+				404A4DA02B8C80AE007EBCCE /* Classes */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		404A4DA02B8C80AE007EBCCE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		404A4DA12B8C80B3007EBCCE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
 			);
-			path = TestView;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
