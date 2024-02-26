@@ -84,7 +84,7 @@
 		404A4DA02B8C80AE007EBCCE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
+				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 		404A4DA12B8C80B3007EBCCE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
+				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
