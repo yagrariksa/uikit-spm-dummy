@@ -8,7 +8,7 @@
 import Foundation
 
 public class Helper {
-    static var bundle: Bundle {
+    public static func bundle() -> Bundle {
         return Bundle(for: TestViewController.self)
     }
 }
