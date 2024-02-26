@@ -10,6 +10,10 @@ import UIKit
 
 public class TestViewController: UIViewController {
     
+    static func nib() -> UIStoryboard {
+        return UIStoryboard(name: "TestView", bundle: Bundle(for: self))
+    }
+    
     @IBOutlet var tableView: UITableView!
     
     public override func viewDidLoad() {
