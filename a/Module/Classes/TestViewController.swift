@@ -10,7 +10,7 @@ import UIKit
 
 public class TestViewController: UIViewController {
     
-    static func nib() -> UIStoryboard {
+    public static func nib() -> UIStoryboard {
         return UIStoryboard(name: "TestView", bundle: Bundle(for: self))
     }
     
