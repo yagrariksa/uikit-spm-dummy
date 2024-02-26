@@ -15,7 +15,6 @@
 		404A4D6A2B8C3EB6007EBCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D682B8C3EB6007EBCCE /* LaunchScreen.storyboard */; };
 		404A4D732B8C3F27007EBCCE /* TestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D722B8C3F27007EBCCE /* TestView.storyboard */; };
 		404A4D752B8C3F31007EBCCE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D742B8C3F31007EBCCE /* TestViewController.swift */; };
-		404A4D772B8C4058007EBCCE /* TestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D762B8C4058007EBCCE /* TestViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		404A4D6B2B8C3EB6007EBCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		404A4D722B8C3F27007EBCCE /* TestView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestView.storyboard; sourceTree = "<group>"; };
 		404A4D742B8C3F31007EBCCE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		404A4D762B8C4058007EBCCE /* TestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 			children = (
 				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
 				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
-				404A4D762B8C4058007EBCCE /* TestViewCell.swift */,
 			);
 			path = TestView;
 			sourceTree = "<group>";
@@ -157,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				404A4D752B8C3F31007EBCCE /* TestViewController.swift in Sources */,
-				404A4D772B8C4058007EBCCE /* TestViewCell.swift in Sources */,
 				404A4D622B8C3EB6007EBCCE /* ViewController.swift in Sources */,
 				404A4D5E2B8C3EB6007EBCCE /* AppDelegate.swift in Sources */,
 				404A4D602B8C3EB6007EBCCE /* SceneDelegate.swift in Sources */,
