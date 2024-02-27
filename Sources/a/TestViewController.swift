@@ -15,6 +15,11 @@ public class TestViewController: UIViewController {
     public static func nib() -> UIStoryboard {
         return UIStoryboard(name: "TestView", bundle: Bundle(for: self))
     }
+
+    static public func createViewController() -> TestViewController {
+        let storyboard = UIStoryboard(name: "TestView", bundle: Bundle.module)
+        return storyboard.instantiateInitialViewController() as! TestViewController
+    }
     
     @IBOutlet var tableView: UITableView!
     
