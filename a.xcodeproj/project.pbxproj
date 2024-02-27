@@ -81,6 +81,7 @@
 		404A4D9F2B8C80AA007EBCCE /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				40FB34B72B8DA07200A8130D /* Storyboard.bundle */,
 				404A4DA12B8C80B3007EBCCE /* Assets */,
 				404A4DA02B8C80AE007EBCCE /* Classes */,
 			);
@@ -107,10 +108,17 @@
 		40FB34B62B8D9E7E00A8130D /* TestView */ = {
 			isa = PBXGroup;
 			children = (
-				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
 				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
 			);
 			path = TestView;
+			sourceTree = "<group>";
+		};
+		40FB34B72B8DA07200A8130D /* Storyboard.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
+			);
+			path = Storyboard.bundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
