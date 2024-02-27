@@ -24,7 +24,7 @@ let package = Package(
             .target(
                 name: "a",
                 path: "a/Module",
-                sources: ["Classes", "Storyboard.bundle"],
+                sources: ["Classes"],
                 resources: [
                     .copy("Assets")
                 ]
