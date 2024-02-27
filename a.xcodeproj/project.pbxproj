@@ -16,6 +16,7 @@
 		404A4D6A2B8C3EB6007EBCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D682B8C3EB6007EBCCE /* LaunchScreen.storyboard */; };
 		404A4D732B8C3F27007EBCCE /* TestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D722B8C3F27007EBCCE /* TestView.storyboard */; };
 		404A4D752B8C3F31007EBCCE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D742B8C3F31007EBCCE /* TestViewController.swift */; };
+		40FB34B02B8D962700A8130D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB34AF2B8D962700A8130D /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		404A4D722B8C3F27007EBCCE /* TestView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestView.storyboard; sourceTree = "<group>"; };
 		404A4D742B8C3F31007EBCCE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		40BCE6812B8C86B8005FCE59 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		40FB34AF2B8D962700A8130D /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
 				404192342B8C9B26003AF790 /* Helper.swift */,
+				40FB34AF2B8D962700A8130D /* Bundle+Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				404A4D752B8C3F31007EBCCE /* TestViewController.swift in Sources */,
+				40FB34B02B8D962700A8130D /* Bundle+Extension.swift in Sources */,
 				404A4D622B8C3EB6007EBCCE /* ViewController.swift in Sources */,
 				404192352B8C9B26003AF790 /* Helper.swift in Sources */,
 				404A4D5E2B8C3EB6007EBCCE /* AppDelegate.swift in Sources */,
