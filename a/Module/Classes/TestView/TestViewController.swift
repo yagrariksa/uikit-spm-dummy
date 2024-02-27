@@ -10,10 +10,8 @@ import UIKit
 
 public class TestViewController: UIViewController {
     
-    public static func getStoryboardVC() -> UIViewController {
-        let storyboard = UIStoryboard(name: "TestView", bundle: Bundle.module)
-        return storyboard.instantiateInitialViewController()!
-        
+    public static func nib() -> UIStoryboard {
+        return UIStoryboard(name: "TestView", bundle: Bundle(for: self))
     }
     
     @IBOutlet var tableView: UITableView!
