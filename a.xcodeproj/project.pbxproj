@@ -90,7 +90,7 @@
 		404A4DA02B8C80AE007EBCCE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
+				40FB34B62B8D9E7E00A8130D /* TestView */,
 				404192342B8C9B26003AF790 /* Helper.swift */,
 				40FB34AF2B8D962700A8130D /* Bundle+Extension.swift */,
 			);
@@ -100,9 +100,17 @@
 		404A4DA12B8C80B3007EBCCE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		40FB34B62B8D9E7E00A8130D /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				404A4D722B8C3F27007EBCCE /* TestView.storyboard */,
+				404A4D742B8C3F31007EBCCE /* TestViewController.swift */,
+			);
+			path = TestView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
