@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
+
 
 public class TestViewController: UIViewController {
     
@@ -37,3 +39,5 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+#endif

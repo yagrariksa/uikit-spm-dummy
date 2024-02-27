@@ -1,33 +1,26 @@
-// swift-tools-version:5.7
-//
-//  Package.swift
-//  a
-//
-//  Created by Daffa Yagrariksa on 26/02/24.
-//
+// swift-tools-version: 5.8
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
-import Foundation
 import PackageDescription
 
 let package = Package(
     name: "a",
-    platforms: [
-            .iOS(.v16)
-        ],
-        products: [
-            .library(
-                name: "a",
-                targets: ["a"])
-        ],
-        dependencies: [],
-        targets: [
-            .target(
-                name: "a",
-                path: "a/Module",
-                sources: ["Classes"],
-                resources: [
-                    .copy("Assets")
-                ]
-            )
-        ]
+    products: [
+        // Products define the executables and libraries a package produces, making them visible to other packages.
+        .library(
+            name: "a",
+            targets: ["a"]),
+    ],
+    targets: [
+        // Targets are the basic building blocks of a package, defining a module or a test suite.
+        // Targets can depend on other targets in this package and products from dependencies.
+        .target(
+            name: "a",
+            resources: [
+                .copy("Resources")
+            ]),
+        .testTarget(
+            name: "aTests",
+            dependencies: ["a"]),
+    ]
 )
