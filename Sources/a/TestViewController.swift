@@ -46,12 +46,12 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
         label.text = "custom3 \(indexPath.row + 1)"
         cell.addSubview(label)
         
-        let imageCenterYConstraint = NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: cell, attribute: .centerX, multiplier: 1, constant: 0)
-        let imageLeadingConstraint = NSLayoutConstraint(item: imageView, attribute: .leading, relatedBy: .equal, toItem: cell, attribute: .leading, multiplier: 1, constant: 16)
+        let imageCenterYConstraint = NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: cell.contentView, attribute: .centerY, multiplier: 1, constant: 0)
+        let imageLeadingConstraint = NSLayoutConstraint(item: imageView, attribute: .leading, relatedBy: .equal, toItem: cell.contentView, attribute: .leading, multiplier: 1, constant: 16)
         
-        let labelCenterYConstraint = NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: cell, attribute: .centerY, multiplier: 1, constant: 0)
+        let labelCenterYConstraint = NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: cell.contentView, attribute: .centerY, multiplier: 1, constant: 0)
         let labelLeadingConstraint = NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .equal, toItem: imageView, attribute: .trailing, multiplier: 1, constant: 16)
-        let labelTrailingConstraint = NSLayoutConstraint(item: label, attribute: .trailing, relatedBy: .greaterThanOrEqual, toItem: cell, attribute: .trailing, multiplier: 1, constant: 16)
+        let labelTrailingConstraint = NSLayoutConstraint(item: label, attribute: .trailing, relatedBy: .greaterThanOrEqual, toItem: cell.contentView, attribute: .trailing, multiplier: 1, constant: 16)
         
         NSLayoutConstraint.activate([imageCenterYConstraint, imageLeadingConstraint, labelCenterYConstraint, labelLeadingConstraint, labelTrailingConstraint])
         
