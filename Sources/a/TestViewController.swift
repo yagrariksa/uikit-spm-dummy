@@ -36,17 +36,21 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = 80
         let cell = tableView.dequeueReusableCell(withIdentifier: "custom3", for: indexPath)
         // cell.set(CustomCellData(textLabel: "Label \(indexPath.row + 1)"))
         let image = UIImage(systemName: "square.and.arrow.down.fill")
         let imageView = UIImageView(image: image)
-        cell.addSubview(imageView)
+        cell.contentView.addSubview(imageView)
         
         let label = UILabel()
         label.text = "custom3 \(indexPath.row + 1)"
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 21)
-        cell.addSubview(label)
+        cell.contentView.addSubview(label)
+        
+        cell.contentView.translatesAutoresizingMaskIntoConstraints = false
         
         let imageViewHeight = NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 44)
         let imageViewWidth = NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 44)
