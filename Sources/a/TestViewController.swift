@@ -24,7 +24,8 @@ public class TestViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     public override func viewDidLoad() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let customCellNib = UINib(nibName: "CustomCell", bundle: Bundle.module)
+        tableView.register(customCellNib, forCellReuseIdentifier: "customCell")
     }
 }
 
@@ -34,8 +35,8 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Label \(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
+        cell.set(CustomCellData(textLabel: "Label \(indexPath.row + 1)"))
         return cell
     }
     

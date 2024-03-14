@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400341A62BA2BBA20026926E /* TestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400341A52BA2BBA20026926E /* TestView.storyboard */; };
+		400341A92BA2BC1C0026926E /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400341A82BA2BC1C0026926E /* CustomCell.xib */; };
+		400341AB2BA2BC400026926E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400341AA2BA2BC400026926E /* CustomCell.swift */; };
 		404A4D5E2B8C3EB6007EBCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D5D2B8C3EB6007EBCCE /* AppDelegate.swift */; };
 		404A4D602B8C3EB6007EBCCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D5F2B8C3EB6007EBCCE /* SceneDelegate.swift */; };
 		404A4D622B8C3EB6007EBCCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D612B8C3EB6007EBCCE /* ViewController.swift */; };
 		404A4D652B8C3EB6007EBCCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D632B8C3EB6007EBCCE /* Main.storyboard */; };
 		404A4D672B8C3EB6007EBCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D662B8C3EB6007EBCCE /* Assets.xcassets */; };
 		404A4D6A2B8C3EB6007EBCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D682B8C3EB6007EBCCE /* LaunchScreen.storyboard */; };
-		40FB34C82B8DAD5500A8130D /* TestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB34C72B8DAD5500A8130D /* TestView.storyboard */; };
 		40FB34CA2B8DAD5F00A8130D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB34C92B8DAD5F00A8130D /* TestViewController.swift */; };
 		40FB34CC2B8DAD6400A8130D /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB34CB2B8DAD6400A8130D /* a.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400341A52BA2BBA20026926E /* TestView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestView.storyboard; path = Sources/a/TestView.storyboard; sourceTree = SOURCE_ROOT; };
+		400341A82BA2BC1C0026926E /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomCell.xib; path = Sources/a/CustomCell.xib; sourceTree = SOURCE_ROOT; };
+		400341AA2BA2BC400026926E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = Sources/a/CustomCell.swift; sourceTree = SOURCE_ROOT; };
 		404A4D5A2B8C3EB6007EBCCE /* a.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		404A4D5D2B8C3EB6007EBCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		404A4D5F2B8C3EB6007EBCCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +33,6 @@
 		404A4D692B8C3EB6007EBCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		404A4D6B2B8C3EB6007EBCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BCE6812B8C86B8005FCE59 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		40FB34C72B8DAD5500A8130D /* TestView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestView.storyboard; path = Resources/TestView.storyboard; sourceTree = SOURCE_ROOT; };
 		40FB34C92B8DAD5F00A8130D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = Sources/a/TestViewController.swift; sourceTree = SOURCE_ROOT; };
 		40FB34CB2B8DAD6400A8130D /* a.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = a.swift; path = Sources/a/a.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400341A72BA2BC060026926E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				400341A82BA2BC1C0026926E /* CustomCell.xib */,
+				400341AA2BA2BC400026926E /* CustomCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		404A4D512B8C3EB5007EBCCE = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +93,9 @@
 		40FB34C62B8DACD000A8130D /* TestView */ = {
 			isa = PBXGroup;
 			children = (
+				400341A72BA2BC060026926E /* Cells */,
 				40FB34C92B8DAD5F00A8130D /* TestViewController.swift */,
-				40FB34C72B8DAD5500A8130D /* TestView.storyboard */,
+				400341A52BA2BBA20026926E /* TestView.storyboard */,
 			);
 			name = TestView;
 			sourceTree = "<group>";
@@ -144,8 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400341A92BA2BC1C0026926E /* CustomCell.xib in Resources */,
 				404A4D6A2B8C3EB6007EBCCE /* LaunchScreen.storyboard in Resources */,
-				40FB34C82B8DAD5500A8130D /* TestView.storyboard in Resources */,
+				400341A62BA2BBA20026926E /* TestView.storyboard in Resources */,
 				404A4D672B8C3EB6007EBCCE /* Assets.xcassets in Resources */,
 				404A4D652B8C3EB6007EBCCE /* Main.storyboard in Resources */,
 			);
@@ -162,6 +177,7 @@
 				404A4D5E2B8C3EB6007EBCCE /* AppDelegate.swift in Sources */,
 				40FB34CA2B8DAD5F00A8130D /* TestViewController.swift in Sources */,
 				40FB34CC2B8DAD6400A8130D /* a.swift in Sources */,
+				400341AB2BA2BC400026926E /* CustomCell.swift in Sources */,
 				404A4D602B8C3EB6007EBCCE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
