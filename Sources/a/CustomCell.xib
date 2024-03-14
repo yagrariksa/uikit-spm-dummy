@@ -38,8 +38,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="image" destination="x5F-wb-0Q1" id="wnX-yl-Kyp"/>
-                <outlet property="label" destination="0k5-fS-H66" id="ngF-sg-0Sw"/>
+                <outlet property="imageCell" destination="x5F-wb-0Q1" id="rmm-CN-aSz"/>
+                <outlet property="label" destination="0k5-fS-H66" id="rLD-u0-p1N"/>
             </connections>
             <point key="canvasLocation" x="23.664122137404579" y="-15.492957746478874"/>
         </tableViewCell>
