@@ -44,6 +44,8 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
         
         let label = UILabel()
         label.text = "custom3 \(indexPath.row + 1)"
+        label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 21)
         cell.addSubview(label)
         
         let imageCenterYConstraint = NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: cell.contentView, attribute: .centerY, multiplier: 1, constant: 0)
